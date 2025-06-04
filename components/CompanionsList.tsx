@@ -33,7 +33,7 @@ const CompanionsList = ({ title, companions, classNames }: CompanionsListProps) 
               <TableCell>
                 <Link href={`/companions/${id}`}>
                   <div className="flex items-center gap-2">
-                    <div>
+                    <div className="size-[72px] flex items-center justify-center rounded-lg max-md:hidden" style={{backgroundColor: getSubjectColor(subject)}}>
                       <Image src={`/icons/${subject}.svg`}
                         alt={subject}
                         width={35}
